@@ -1,5 +1,5 @@
 ---
-title: Friends of Polyamory Ireland
+title: Friends
 layout: default
 ---
 {% for p in site.friends %}

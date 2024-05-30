@@ -32,7 +32,6 @@ HEADER {
 	}
 }
 NAV {
-	padding-top: 5em;
 }
 ARTICLE {
 	H2 {
@@ -49,25 +48,54 @@ FOOTER {
 }
 
 /************************************************
- * Layout
+ * Wide Layout
  ************************************************/
- BODY {
-	display: grid;
-	grid-template-columns: 12em 1fr;
-	grid-template-areas: 
-	"nav header"
-	"nav article"
-	"nav footer";
-	HEAEDER {
-		grid-area: header;
+@media (min-width: 40em) {
+	BODY {
+		display: grid;
+		grid-template-columns: 12em 1fr;
+		grid-template-rows: auto 1fr auto;
+		grid-template-areas: 
+		".      header"
+		"nav    article"
+		"footer footer";
+		HEAEDER {
+			grid-area: header;
+		}
+		NAV {
+			grid-area: nav;
+		}
+		ARTICLE {
+			grid-area: article;
+		}
+		FOOTER {
+			grid-area: footer;
+		}
 	}
-	NAV {
-		grid-area: nav;
-	}
-	ARTICLE {
-		grid-area: article;
-	}
-	FOOTER {
-		grid-area: footer;
+}
+
+/************************************************
+ * Narrow Layout
+ ************************************************/
+@media (max-width: 40em) {
+	BODY {
+		NAV {
+			UL {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				margin: 0;
+				padding: 0;
+				LI {
+					list-style-type: none;
+					A {
+						display: block;
+						padding: 0.4em;
+						text-align: center;
+						width: 100%;
+					}
+				}
+			}
+		}
 	}
 }
