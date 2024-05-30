@@ -1,0 +1,12 @@
+permalink: /:year/:month/:day/:title:output_ext
+url: https://polyamory.ie
+name: Polyamory.ie
+description: The Most Officialest Polyamory Blog in Ireland
+collections:
+  community:
+  resources:
+  events:
+  mental:
+  physical:
+  friends:
+  

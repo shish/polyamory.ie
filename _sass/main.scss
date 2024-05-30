@@ -1,0 +1,73 @@
+:root {
+	--fg: #009FE3;
+	--hl: #E50051;
+	--bg: #340046;
+	--link: #fcbf00;
+}
+
+/************************************************
+ * Colours
+ ************************************************/
+BODY {
+	background-color: var(--bg);
+	background-image: url("/assets/img/favicon.svg"), url("/assets/img/favicon-bars.svg");
+	background-repeat: no-repeat, repeat-x;
+	background-size: 50px;
+	padding-top: 50px;
+	color: var(--fg);
+
+	A, A:visited {
+		color: var(--link);
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+HEADER {
+	H1 {
+		color: var(--hl);
+		font-size: 2em;
+		margin: 0.5em 0;
+	}
+}
+NAV {
+	padding-top: 5em;
+}
+ARTICLE {
+	H2 {
+		color: var(--hl);
+		font-size: 1.5em;
+		margin: 0.5em 0;
+	}
+}
+FOOTER {
+	border-top: 1px solid var(--fg);
+	margin-top: 2em;
+	padding-top: 0.5em;
+	text-align: center;
+}
+
+/************************************************
+ * Layout
+ ************************************************/
+ BODY {
+	display: grid;
+	grid-template-columns: 12em 1fr;
+	grid-template-areas: 
+	"nav header"
+	"nav article"
+	"nav footer";
+	HEAEDER {
+		grid-area: header;
+	}
+	NAV {
+		grid-area: nav;
+	}
+	ARTICLE {
+		grid-area: article;
+	}
+	FOOTER {
+		grid-area: footer;
+	}
+}

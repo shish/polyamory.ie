@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="content">
+	{{ content }}
+	<hr>
+	<small><i>{{ page.date }}</i></small>
+</div>
+<div class="buttons">
+	{% if page.previous %}
+		<a href="{{ page.previous.url }}">Previous</a>
+	{% endif %}
+	<a href="/">Index</a>
+	{% if page.next %}
+		<a href="{{ page.next.url }}">Next</a>
+	{% endif %}
+</div>
