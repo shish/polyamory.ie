@@ -3,6 +3,8 @@
 	--hl: #E50051;
 	--bg: #340046;
 	--link: #fcbf00;
+	font-size: 16px;
+	font-family: sans-serif;
 }
 
 /************************************************
@@ -56,10 +58,10 @@ FOOTER {
 		grid-template-columns: 12em 1fr;
 		grid-template-rows: auto 1fr auto;
 		grid-template-areas: 
-		".      header"
+		"x      header"
 		"nav    article"
 		"footer footer";
-		HEAEDER {
+		HEADER {
 			grid-area: header;
 		}
 		NAV {
