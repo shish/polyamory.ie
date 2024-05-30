@@ -50,7 +50,7 @@ FOOTER {
 /************************************************
  * Wide Layout
  ************************************************/
-@media (min-width: 641px) {
+@media (min-width: 801px) {
 	BODY {
 		display: grid;
 		grid-template-columns: 12em 1fr;
@@ -77,7 +77,7 @@ FOOTER {
 /************************************************
  * Narrow Layout
  ************************************************/
-@media (max-width: 640px) {
+@media (max-width: 800px) {
 	BODY {
 		NAV {
 			UL {
