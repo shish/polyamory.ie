@@ -1,5 +1,7 @@
 ---
 title: Under The Rainbow
-ext_url: https://utrtherapycentre.com/
+links:
+  - title: Website
+    url: https://utrtherapycentre.com/
 ---
-A diverse collection of therapists
+A collection of therapists with LGBTQ+, neurodiversity, gender, and sexual relationship diversity affirmation as core values.

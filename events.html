@@ -1,0 +1,13 @@
+---
+title: Events
+layout: default
+---
+{% for p in site.events %}
+  <h2>{{ p.title }}</h2>
+  <p>{{ p.content | markdownify }}</p>
+  <p>
+    {% for l in p.links %}
+      <a href="{{ l.url }}">{{ l.title }} &gt;&gt;</a>
+    {% endfor %}
+  </p>
+{% endfor %}
