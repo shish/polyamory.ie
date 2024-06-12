@@ -1,0 +1,8 @@
+---
+title: Glossary
+layout: default
+---
+{% for p in site.glossary %}
+  <h2 id="{{ p.title }}">{{ p.title }}</h2>
+  <p>{{ p.content | markdownify }}</p>
+{% endfor %}
