@@ -1,0 +1,29 @@
+{
+        "name": "Polyamory.ie",
+        "build": {
+                "dockerfile": "../Dockerfile",
+                "target": "tools"
+        },
+        "forwardPorts": [
+                4000
+        ],
+        "portsAttributes": {
+                "4000": {
+                        "label": "Application",
+                        "onAutoForward": "openPreview"
+                }
+        },
+        "otherPortsAttributes": {
+                "onAutoForward": "silent"
+        },
+        "postCreateCommand": "bundle install",
+        "postStartCommand": "bundle exec jekyll serve",
+        "customizations": {
+                "vscode": {
+                        "extensions": [
+                                "ms-azuretools.vscode-docker"
+                        ]
+                }
+        }// ,
+        // "remoteUser": "vscode"
+}

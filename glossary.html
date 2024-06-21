@@ -3,6 +3,12 @@ title: Glossary
 layout: default
 ---
 {% for p in site.glossary %}
-  <h2 id="{{ p.title }}">{{ p.title }}</h2>
+  <h2 id="{{ p.title }}">{{ p.title }}
+    {% if p.aka %}
+    (aka {% for a in p.aka %}
+      <span id="{{ a }}">{{ a }}</span>,
+    {% endfor%})
+    {% endif %}
+  </h2>
   <p>{{ p.content | markdownify }}</p>
 {% endfor %}

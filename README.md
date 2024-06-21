@@ -1,6 +1,6 @@
 Dev mode
 ```
-docker run -ti --rm --volume="$PWD:/srv/jekyll:Z" --publish '0.0.0.0:4000:4000' jekyll/jekyll:3.8 jekyll serve
+docker run -ti --rm --volume="$PWD:/srv/jekyll:Z" --publish '0.0.0.0:4000:4000' jvconseil/jekyll-docker:4.3.3 jekyll serve
 ```
 
 Prod mode

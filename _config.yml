@@ -10,3 +10,18 @@ collections:
   physical:
   friends:
   glossary:
+plugins:
+  - jekyll-diagrams
+jekyll-diagrams:
+  graphviz:
+    default_layout: neato
+    graph_attributes:
+      bgcolor: transparent
+    node_attributes:
+      fillcolor: "#340046"
+      fontcolor: "#009FE3"
+      color: "#009FE3"
+      style: filled
+    edge_attributes:
+      color: "#009FE3"
+      dir: none
