@@ -18,10 +18,10 @@ jekyll-diagrams:
     graph_attributes:
       bgcolor: transparent
     node_attributes:
-      fillcolor: "#340046"
-      fontcolor: "#009FE3"
-      color: "#009FE3"
+      fillcolor: transparent
+      fontcolor: "#DDDDDD"
+      color: "#DDDDDD"
       style: filled
     edge_attributes:
-      color: "#009FE3"
+      color: "#DDDDDD"
       dir: none

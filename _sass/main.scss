@@ -1,8 +1,14 @@
 :root {
-	--fg: #009FE3;
-	--hl: #E50051;
-	--bg: #340046;
-	--link: #fcbf00;
+	--white: #DDDDDD;
+	--yellow: #FCBF00;
+	--blue: #009FE3;
+	--pink: #E50051;
+	--purple: #340046;
+
+	--fg: var(--white);
+	--hl: var(--pink);
+	--bg: var(--purple);
+	--link: var(--yellow);
 	font-size: 16px;
 	font-family: sans-serif;
 }
@@ -40,6 +46,9 @@ ARTICLE {
 		color: var(--hl);
 		font-size: 1.5em;
 		margin: 0.5em 0;
+	}
+	svg {
+		max-width: 80%;
 	}
 }
 FOOTER {

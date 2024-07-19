@@ -1,5 +1,7 @@
 ---
 title: Nesting Partner
 aka:
-- birb
+- NP
+- Birb
 ---
+A partner who you live with

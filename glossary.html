@@ -6,7 +6,8 @@ layout: default
   <h2 id="{{ p.title }}">{{ p.title }}
     {% if p.aka %}
     (aka {% for a in p.aka %}
-      <span id="{{ a }}">{{ a }}</span>,
+      <span id="{{ a }}">{{ a }}</span>
+      {%- unless forloop.last %}, {% endunless -%}
     {% endfor%})
     {% endif %}
   </h2>
