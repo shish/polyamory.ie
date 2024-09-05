@@ -20,7 +20,7 @@ digraph {
     J [label="Jules"]
     L [label="Staple"]
     M [label="Hank"]
-    N [label="Roof"]
+    N [label="Nigel"]
   A -> F
   D -> E
   B -> C
