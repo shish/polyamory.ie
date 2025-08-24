@@ -11,7 +11,7 @@ RUN apt-get update \
     && apt-get -y install git openssh-client iproute2 procps lsb-release \
     # && gem install ruby-debug-ide \
     # && gem install debase \
-    && apt-get -y install curl software-properties-common \
+    && apt-get -y install curl \
     && curl -sL https://deb.nodesource.com/setup_18.x | bash - \
     && apt-get -y install nodejs graphviz \
     && groupadd --gid $USER_GID $USERNAME \
