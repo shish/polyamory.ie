@@ -1,4 +1,4 @@
-FROM ruby:3.3 AS tools
+FROM ruby:4.0 AS tools
 ENV DEBIAN_FRONTEND=noninteractive
 
 ARG USERNAME=vscode
