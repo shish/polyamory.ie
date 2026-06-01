@@ -28,7 +28,7 @@ jobs:
       uses: elgohr/Publish-Docker-Github-Action@main
       with:
         name: shish2k/polyamory.ie
-        username: ${{ secrets.DOCKER_USERNAME }}
+        username: ${{ vars.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
   deploy:
