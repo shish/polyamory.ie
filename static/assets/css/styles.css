@@ -1,0 +1,118 @@
+:root {
+	--white: #DDDDDD;
+	--yellow: #FCBF00;
+	--blue: #009FE3;
+	--pink: #E50051;
+	--purple: #340046;
+
+	--fg: var(--white);
+	--hl: var(--pink);
+	--bg: var(--purple);
+	--link: var(--yellow);
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+/************************************************
+ * Colours
+ ************************************************/
+BODY {
+	background-color: var(--bg);
+	background-image: url("/assets/img/favicon.svg"), url("/assets/img/favicon-bars.svg");
+	background-repeat: no-repeat, repeat-x;
+	background-size: 50px;
+	padding-top: 50px;
+	color: var(--fg);
+}
+
+BODY A,
+BODY A:visited {
+	color: var(--link);
+	text-decoration: none;
+}
+
+BODY A:hover {
+	text-decoration: underline;
+}
+
+HEADER H1 {
+	color: var(--hl);
+	font-size: 2em;
+	margin: 0.5em 0;
+}
+
+ARTICLE H2 {
+	color: var(--hl);
+	font-size: 1.5em;
+	margin: 0.5em 0;
+}
+ARTICLE>P:first-child {
+    margin-top: 0;
+}
+
+ARTICLE IMG,
+ARTICLE svg {
+	max-width: 80%;
+}
+
+FOOTER {
+	border-top: 1px solid var(--fg);
+	margin-top: 2em;
+	padding-top: 0.5em;
+	text-align: center;
+}
+
+/************************************************
+ * Wide Layout
+ ************************************************/
+@media (min-width: 801px) {
+	BODY {
+		display: grid;
+		grid-template-columns: 12em 1fr;
+		grid-template-rows: auto 1fr auto;
+		grid-template-areas:
+			"x      header"
+			"nav    article"
+			"footer footer";
+	}
+
+	BODY HEADER {
+		grid-area: header;
+	}
+
+	BODY NAV {
+		grid-area: nav;
+	}
+
+	BODY ARTICLE {
+		grid-area: article;
+	}
+
+	BODY FOOTER {
+		grid-area: footer;
+	}
+}
+
+/************************************************
+ * Narrow Layout
+ ************************************************/
+@media (max-width: 800px) {
+	NAV UL {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	NAV LI {
+		list-style-type: none;
+	}
+
+	NAV A {
+		display: block;
+		padding: 0.4em;
+		text-align: center;
+		width: 100%;
+	}
+}

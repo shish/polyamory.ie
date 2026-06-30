@@ -1,0 +1,14 @@
+{{ define "main" }}
+  {{ .Content }}
+  {{ range .Pages }}
+    <h2 id="{{ anchorize .Title }}">{{ .Title }}</h2>
+    {{ .Content }}
+    {{ if .Params.links }}
+      <ul>
+        {{ range .Params.links }}
+          <li><a href="{{ .url }}">{{ .title }}</a></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  {{ end }}
+{{ end }}

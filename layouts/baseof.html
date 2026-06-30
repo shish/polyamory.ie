@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{{ .Title }}</title>
+        <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+        <link rel="stylesheet" href="/assets/css/styles.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>{{ .Title }}</h1>
+        </header>
+
+        <nav>
+            <ul>
+                {{- range .Site.Menus.main }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{- end }}
+            </ul>
+        </nav>
+
+        <article>
+            {{ block "main" . }}{{ end }}
+        </article>
+
+        <footer>
+            polyamory.ie &copy;
+            <a href="https://github.com/shish/polyamory.ie"
+                >Shish &amp; Friends</a
+            >
+            {{ now.Year }}
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,5 @@
+digraph {
+  layout=dot
+  Alice -> Bob
+  Charlie -> Bob
+}

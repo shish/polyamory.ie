@@ -1,0 +1,9 @@
+baseURL = "https://polyamory.ie"
+locale = "en-gb"
+title = "Polyamory.ie"
+description = "The Most Officialest Polyamory Blog in Ireland"
+disableKinds = ['taxonomy', 'term']
+
+[outputs]
+home     = ["HTML", "RSS"]
+section  = ["HTML"]

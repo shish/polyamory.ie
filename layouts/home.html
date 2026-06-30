@@ -1,0 +1,10 @@
+{{ define "main" }}
+  {{ .Content }}
+  {{ $site := . }}
+  {{ range $site.Site.Menus.main }}
+    {{ if and (ne .Name "Home") (.Page.Params.description) }}
+      <h2>{{ .Name }} <a href="{{ .URL }}">&rarr;</a></h2>
+      <p>{{ .Page.Params.description }}</p>
+    {{ end }}
+  {{ end }}
+{{ end }}
