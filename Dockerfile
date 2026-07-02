@@ -1,7 +1,5 @@
 FROM hugomods/hugo:exts AS build
 RUN apk add graphviz
-ARG HUGO_BASEURL=
-ENV HUGO_BASEURL=${HUGO_BASEURL}
 WORKDIR /src
 COPY . /src
 RUN ./build.sh
