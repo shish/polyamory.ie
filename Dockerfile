@@ -4,7 +4,7 @@ RUN apk add graphviz
 WORKDIR /src
 COPY . /src
 RUN ./build.sh
-RUN hugo --minify --enableGitInfo
+RUN hugo --minify
 RUN echo ok > public/health
 
 FROM nginx:alpine

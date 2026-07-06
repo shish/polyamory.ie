@@ -1,1 +1,5 @@
 public/
+health
+resources/
+.git/
+.hugo_build.lock
