@@ -1,4 +1,5 @@
-FROM hugomods/hugo:exts AS build
+FROM ghcr.io/gohugoio/hugo:v0.162.1 AS build
+USER root
 RUN apk add graphviz
 WORKDIR /src
 COPY . /src
