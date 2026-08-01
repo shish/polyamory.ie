@@ -1,4 +1,4 @@
-FROM ghcr.io/gohugoio/hugo:v0.162.1 AS build
+FROM ghcr.io/gohugoio/hugo:v0.164.0 AS build
 USER root
 RUN apk add graphviz
 WORKDIR /src
